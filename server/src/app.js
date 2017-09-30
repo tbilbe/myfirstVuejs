@@ -15,4 +15,10 @@ app.get('/status', (req, res) => {
   })
 })
 
+app.post('/register', (req, res) => {
+  res.send({
+    message: `Hey ${req.body.email}! You mutha fucka`
+  })
+})
+
 app.listen(process.env.PORT || 8081)
